@@ -1,0 +1,31 @@
+.ellipsis {
+  transition: transform 100ms ease-in;
+}
+
+.ellipsis:focus, .ellipsis:hover {
+  color: transparent;
+}
+
+.ellipsis:hover>.MuiSvgIcon-root {
+  color: #757575;
+}
+
+.ellipsis:focus:after, .ellipsis:hover:after {
+  font-size: 13px;
+  transform: scale(1.07);
+  content: attr(data-text);
+  overflow: visible;
+  text-overflow: inherit;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 7px 11px;
+  position: absolute;
+  bottom: -25px;
+  width: auto;
+  max-width: 20rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.28);
+  white-space: normal;
+  word-wrap: break-word;
+  display: block;
+  color: white;
+}

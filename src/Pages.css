@@ -1,0 +1,11 @@
+.pages{
+    flex: 1;
+  height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0.75);
+}

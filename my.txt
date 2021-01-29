@@ -1,0 +1,59 @@
+
+
+ {/* {!user ? (
+            <Login />
+          ) : (
+            <> */}
+            <Route exact path="/">
+            <Header />
+            <div className="app__body">
+              <Sidebar />
+              <Feed />
+              <Widgets />
+            </div>
+          </Route>
+          {/* </>
+      )} */}
+
+
+          <Route path="/message">
+            <Header />
+            <div className="app__body">
+              <Sidebar />
+              <AppMessage />
+              <Widgets />
+            </div>
+          </Route> 
+
+
+          <Route exact path="/page">
+            <Header />
+            <Pages/>
+          </Route> 
+
+
+
+
+
+
+
+
+
+
+          Header
+           {/* header center  */}
+      <div className="header__center">
+        <Link to="/">
+          {/* <div
+            className="header__option header__option--active ellipsis"
+            data-text="Home"
+          > */}
+            <HomeIcon fontSize="large" />
+          {/* </div> */}
+        </Link>
+
+        <Link to="/page">
+          {/* <div className="header__option ellipsis" data-text="Pages"> */}
+            <FlagIcon fontSize="large" />
+          {/* </div> */}
+        </Link>

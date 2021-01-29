@@ -1,0 +1,32 @@
+.App__message {
+  text-align: center;
+  flex: 1;
+  overflow-y: scroll;
+  height: 84.7vh;
+  margin: 15px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0.75);
+
+}
+
+.app__form{
+  padding: 20px;
+  position: sticky;
+  border-radius: 10px;
+  bottom: 0;
+  z-index: 1;
+  background-color: #e9e9eb;
+ }
+ 
+ .app__formControl{
+   display: flex !important;
+   flex-direction: row !important;
+ }
+ 
+ .app__iconButton{
+   flex: 0;
+ }
+ .app__input{
+   flex: 1;
+ }
